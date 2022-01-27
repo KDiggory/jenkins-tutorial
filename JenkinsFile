@@ -1,14 +1,15 @@
 pipeline{
         agent any
         stages{
-            stage('Make Directory'){
+            stage('Say hello'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test"
+                    sh 'echo "Hello"'
                 }
             }
-            stage('Make Files'){
+            stage('say goodbye'){
                 steps{
-                    sh "touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2"
+                 sh 'echo "Goodbye"'
+                    
                 }
             }
         }
